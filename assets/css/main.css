@@ -1,0 +1,71 @@
+@import url(./global.css);
+@import url(./reset.css);
+
+body {
+    display: grid;
+    grid-template-rows: 280px repeat(4, 300px) 150px;
+    grid-template-areas: "header"
+    "section-01"
+    "section-02"
+    "section-03"
+    "section-04"
+    "footer";
+}
+
+header {
+    background-image: url(../img/Header\ Background.png);
+    height: 15rem;
+    text-align: center;
+    grid-area: header;
+}
+
+header h1 {
+    color: white;
+    font-weight: normal;
+    margin-top: 2rem;
+}
+
+header p {
+    padding-top: 1rem;
+    color: white;
+    font-weight: normal;
+}
+
+header button {
+    margin: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+main h2{
+    margin: 1rem;
+    font-size: calc(1rem + 2vw);
+    text-align: justify;
+}
+
+main p {
+    margin: 1rem;
+    text-align: justify;
+}
+
+section-01 {
+    grid-area: section-01;
+}
+
+    section-02 {
+        grid-area: section-02;
+    }
+
+    section-03 {
+        grid-area: section-03;
+    }
+
+    section-04 {
+        grid-area: section-04;
+    }
+
+    footer {
+        grid-area: footer;
+}
